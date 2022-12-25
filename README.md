@@ -9,8 +9,8 @@ Run the script using python bot.py
 ## Configuration
 You can modify the following variables in the script to customize its behavior:
 
-**time_delay_hr**: The number of hours to wait before checking for new projects.
-**min_bid**: The minimum number of bids a project should have in order for the bot to place a bid.
-**max_bid**: The maximum average bid amount a project should have in order for the bot to place a bid.
+**time_delay_hr**: The number of hours to wait before checking for new projects.\n
+**min_bid**: The minimum number of bids a project should have in order for the bot to place a bid.\n
+**max_bid**: The maximum average bid amount a project should have in order for the bot to place a bid.\n
 ## Disclaimer
 Please use this script responsibly and at your own risk. I am not responsible for any consequences that may happen
