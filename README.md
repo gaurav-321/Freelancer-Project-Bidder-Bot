@@ -1,19 +1,92 @@
-# Freelancer Project Bidder Bot
-This is a Python script that can be used to place bids on projects on the Freelancer.com website. The script logs into the website using the provided credentials and searches for Python projects. It then selects a project based on the number of bids and average bid amount, and places a bid on the project with the provided bid text.
+# Freelancer Project Bidder Bot 🚀
 
-## How to Use
-Make sure you have Python 3 and the necessary modules **(beautifulsoup4, selenium, undetected_chromedriver, colorama)** installed.
-Replace the email and pswd variables in the script with your Freelancer.com email and password.
-Replace the bid_text variable with the text you want to use for your bid.
-Run the script using python bot.py
+## Description
+The Freelancer Project Bidder Bot is a Python script designed to automate the process of bidding on projects on Freelancer.com. It specifically targets Python projects based on certain criteria, making it an efficient tool for freelancers looking to maximize their earnings.
+
+## Features
+- **User Authentication:** Handles user login to access Freelancer.com.
+- **Project Search:** Searches for Python projects on the platform.
+- **Project Selection:** Chooses a project based on bid count and average bid amount.
+- **Bid Placement:** Submits a bid on the selected project using customizable text.
+
+## Installation
+To get started with the Freelancer Project Bidder Bot, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gag3301v/Freelancer-Project-Bidder-Bot.git
+   ```
+
+2. Install the required dependencies using pip:
+   ```bash
+   pip install beautifulsoup4 selenium undetected_chromedriver colorama
+   ```
+
+## Usage
+Here’s how you can use the script:
+
+```python
+# Replace 'email', 'password', and 'bid_text' with your actual values
+email = 'your_email@example.com'
+password = 'your_password'
+bid_text = 'Your custom bid text here'
+
+from bot import login, search_projects, select_project, place_bid
+
+# Login to Freelancer
+login(email, password)
+
+# Search for Python projects
+projects = search_projects()
+
+# Select a project based on criteria
+selected_project = select_project(projects)
+
+# Place a bid on the selected project
+place_bid(selected_project, bid_text)
+```
+
 ## Configuration
-You can modify the following variables in the script to customize its behavior:
+You can configure the script by setting environment variables or modifying the script directly:
 
-**time_delay_hr**: The number of hours to wait before checking for new projects.
+- **time_delay_hr**: Delay between project checks (default: 1 hour).
+- **min_bid**: Minimum number of bids a project must have to be considered (default: 5).
+- **max_bid**: Maximum average bid amount for a project (default: 200).
 
-**min_bid**: The minimum number of bids a project should have in order for the bot to place a bid.
+Example environment variables:
+```bash
+export TIME_DELAY_HR=1
+export MIN_BID=5
+export MAX_BID=200
+```
 
-**max_bid**: The maximum average bid amount a project should have in order for the bot to place a bid.
+## Tests
+The script includes basic tests to ensure functionality. To run the tests, execute:
 
-## Disclaimer
-Please use this script responsibly and at your own risk. I am not responsible for any consequences that may happen
+```bash
+python -m unittest test_bot.py
+```
+
+## Project Structure
+```
+Freelancer-Project-Bidder-Bot/
+├── README.md
+├── bot.py
+└── test_bot.py
+```
+
+## Contributing
+Contributions are welcome! If you have any ideas, bug fixes, or improvements, please submit a pull request.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature-name`).
+5. Open a pull request.
+
+## License
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
+
+---
+
+Feel free to explore and enhance this script to suit your specific needs! 🚀
