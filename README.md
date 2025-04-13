@@ -1,15 +1,15 @@
 # Freelancer Project Bidder Bot 🚀
 
-## Description
+✨ **Description**  
 The Freelancer Project Bidder Bot is a Python script designed to automate the process of bidding on projects on Freelancer.com. It specifically targets Python projects based on certain criteria, making it an efficient tool for freelancers looking to maximize their earnings.
 
-## Features
+🚀 **Features**
 - **User Authentication:** Handles user login to access Freelancer.com.
 - **Project Search:** Searches for Python projects on the platform.
 - **Project Selection:** Chooses a project based on bid count and average bid amount.
 - **Bid Placement:** Submits a bid on the selected project using customizable text.
 
-## Installation
+🛠️ **Installation**
 To get started with the Freelancer Project Bidder Bot, follow these steps:
 
 1. Clone the repository:
@@ -22,7 +22,7 @@ To get started with the Freelancer Project Bidder Bot, follow these steps:
    pip install beautifulsoup4 selenium undetected_chromedriver colorama
    ```
 
-## Usage
+📦 **Usage**
 Here’s how you can use the script:
 
 ```python
@@ -46,7 +46,7 @@ selected_project = select_project(projects)
 place_bid(selected_project, bid_text)
 ```
 
-## Configuration
+🔧 **Configuration**
 You can configure the script by setting environment variables or modifying the script directly:
 
 - **time_delay_hr**: Delay between project checks (default: 1 hour).
@@ -60,14 +60,14 @@ export MIN_BID=5
 export MAX_BID=200
 ```
 
-## Tests
+🧪 **Tests**
 The script includes basic tests to ensure functionality. To run the tests, execute:
 
 ```bash
 python -m unittest test_bot.py
 ```
 
-## Project Structure
+📁 **Project Structure**
 ```
 Freelancer-Project-Bidder-Bot/
 ├── README.md
@@ -75,7 +75,7 @@ Freelancer-Project-Bidder-Bot/
 └── test_bot.py
 ```
 
-## Contributing
+🙌 **Contributing**
 Contributions are welcome! If you have any ideas, bug fixes, or improvements, please submit a pull request.
 
 1. Fork the repository.
@@ -84,9 +84,5 @@ Contributions are welcome! If you have any ideas, bug fixes, or improvements, pl
 4. Push to the branch (`git push origin feature/your-feature-name`).
 5. Open a pull request.
 
-## License
+📄 **License**
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
-
----
-
-Feel free to explore and enhance this script to suit your specific needs! 🚀
